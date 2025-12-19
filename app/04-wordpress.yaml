@@ -30,6 +30,7 @@ spec:
       labels:
         app: wordpress
     spec:
+      # containers:
       containers:
         - name: wordpress
           image: wordpress:6.5.3-php8.2-apache
@@ -56,22 +57,5 @@ spec:
                 secretKeyRef:
                   name: wp-secrets
                   key: MYSQL_PASSWORD
-          # readinessProbe:
-          readinessProbe:
-            httpGet:
-              path: /
-              port: 80
-            initialDelaySeconds: 60
-            periodSeconds: 10
-            timeoutSeconds: 5
-            failureThreshold: 6
-          
-          livenessProbe:
-            httpGet:
-              path: /
-              port: 80
-            initialDelaySeconds: 120
-            periodSeconds: 20
-            timeoutSeconds: 5
-            failureThreshold: 6
+
 
