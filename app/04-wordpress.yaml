@@ -16,7 +16,7 @@ metadata:
   name: wordpress
   namespace: test-aman
 spec:
-  replicas: 2
+  replicas: 5
   strategy:
     type: RollingUpdate
     rollingUpdate:
@@ -73,6 +73,7 @@ spec:
             periodSeconds: 20
             timeoutSeconds: 5
             failureThreshold: 6
+
 
 
 
