@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: wp-config
+  namespace: test-aman
+data:
+  MYSQL_DATABASE: wordpress
+  WORDPRESS_DB_HOST: mysql.test-aman.svc.cluster.local
+  WORDPRESS_DB_NAME: wordpress
+  WORDPRESS_DB_USER: wpuser
