@@ -296,11 +296,3 @@ kubectl delete ns test-aman
 
 ---
 
-If you want next, I can:
-
-* Convert this into a **cheat-sheet PDF**
-* Add **ArgoCD CLI (`argocd`) commands**
-* Create **resume bullets**
-* Add **HPA commands**
-
-Just tell me 👊
