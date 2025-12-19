@@ -32,7 +32,7 @@ spec:
     spec:
       containers:
         - name: wordpress
-          image: wordpress:6.5.2-php8.2-apache
+          image: wordpress:6.5.3-php8.2-apache
           ports:
             - containerPort: 80
           env:
@@ -73,6 +73,7 @@ spec:
             periodSeconds: 20
             timeoutSeconds: 5
             failureThreshold: 6
+
 
 
 
