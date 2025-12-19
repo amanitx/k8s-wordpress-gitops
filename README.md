@@ -16,4 +16,4 @@ test-aman
 3. Image version changes trigger rolling updates
 
 ## Demo
-Change WordPress image tag in GitHub and watch ArgoCD sync automatically.
+Change WordPress image tag in GitHub and watch ArgoCD sync automatically..
